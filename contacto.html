@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styleform.css">
+</head>
+<body>
+    <div>
+        <header>    
+            <div class="barra">
+                <figure class="logo">
+                <img src="img/Logo.png" width="200px" alt="Logo Astro">
+                </figure>
+            <nav class="desplegable">
+                <ul>
+    
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+    
+                <li><a href="servicios.html">Servicios</a>
+    
+                <ul>
+                      <li><a href="Diseño Gráfico.html">Diseño Gráfico</a></li>
+                      <li><a href="Offset.html">Offset</a></li>
+                      <li><a href="Gran Formato.html">Gran Formato</a></li>
+                      <li><a href="Flexográfia.html">Flexográfia</a></li>
+                      <li><a href="Huecograbado.html">Huecograbado</a></li>
+                      <li><a href="Serigráfia.html">Serigráfia</a></li>
+                   </ul>
+                </li>
+            </ul>    
+               
+                      
+            </nav>
+        </div>
+            
+        </header>
+    </div>
+        <h2>Fomulario de Contacto</h2>
+    
+    <form action="mailto:lili_betzi97@hotmail.com" method="POST">
+        <label>Nombres:</label>
+        <input maxlength="50" type="text" required size="50"
+        autofocus placeholder="Nombres">
+        <!--NO OCUPAR EL BR(    es el espaciado entre region, se nace en css-->
+     <!--<br>--> <!--no se ocupa, pero es para que no aparezca dorrido si no en la parte de abajo-->
+
+     <!--<br>-->
+        <label>Apellidos:</label>
+        <input maxlength="50" type="text" required size="50"
+        autofocus placeholder="Apellidos">
+
+     <!--<br>-->
+        <label>Email:</label>
+        <input maxlength="50" type="email" required size="50"
+        autofocus placeholder="Coloca tu correo">
+
+     <!--<br>-->       <!--input size="100"-->
+        <label>Teléfono:</label>
+        <input type="tel" pattern="[0-9]" required size="50"
+        placeholder="Número de 10 dígitos"> 
+
+    
+     <!--<br>-->
+        <label>Servicios:</label>
+    <!----MENU DE SELECCIÓN---->
+    <select name="Servicios" required>
+        <option value="Diseño Gráfico">Diseño Gráfico</option>
+        <option value="Offset">Offset</option>
+        <option value="Gran Formato">Gran Formato</option>
+        <option value="Flexográfia">Flexográfia</option>
+        <option value="Huecograbado">Huecograbado</option>
+        <option value="Serigráfia">Serigráfia</option>
+        <option value="Impresión">Impresión</option>
+    </select>
+<!--<br>-->        
+        
+    <div>
+        <textarea name="observaciones" cols="80" rows="10">
+        Hola me gustaria saber:
+        </textarea>
+    </div> 
+        <input type="Submit" value="Enviar">
+        </form>
+        <button onclick="alert('Gracias por entrar a nuestra página web!')">
+        Leer más ... </button>
+
+</body>
+</html>
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/*h2 {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    text-align: center;
+    
+}*/
+body {
+    font-family: 'Lato', sans-serif;
+
+}
+.desplegable ul {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.desplegable a{
+    display: block;
+    padding: 1rem;
+    /*background: black;*/
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+.desplegable a:hover {
+    background-color: rgb(60, 118, 241);
+}
+.desplegable ul li ul {
+    display: none;
+}
+.desplegable ul li a:hover + ul, .desplegable ul li ul:hover{
+    display: block;
+
+}
+.barra {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+
+
+}
+h2 {
+    font-family: Helvetica;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+form {
+    padding: 20px;
+    font-family: Helvetica;
+}
+label {
+    margin: 15px, 0px;
+    clear: both;
+    display: block;
+}
+input {
+    padding: 5px;
+    border: solid 1px blue;
+}
+:focus {
+    border-color: darkblue;
+}
+input [type="submit"] {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+    cursor: pointer;
+}

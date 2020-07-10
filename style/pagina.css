@@ -1,0 +1,32 @@
+body {
+    font-family: Helvetica;
+}
+.siteheader {
+    background-image: url(../img/Impresos.jpg);
+    min-height: 728px;
+    min-width: 1980px;
+}
+.barra {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.icono {
+    flex-basis: cal(33.3% - 1rem);
+    text-align: center;
+}
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.icono h2 {
+    text-transform: capitalize;
+}
+.iconos-paquete {
+    display: flex;
+    justify-content: space-between;

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Diseño e Impresión</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Header de mi página-->
+    <div class="siteheader">
+        <header>
+            <div class="barra">
+                <figure class="logo">
+                    <img src="img/Logo.png" width="200px" alt="Logo Astro">
+                </figure>
+                <nav class="desplegable">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="servicios.html">Servicios</a>
+                            <ul>
+                                <li><a href="Diseño Gráfico.html">Diseño Gráfico</a></li>
+                                <li><a href="Offset.html">Offset</a></li>
+                                <li><a href="Gran Formato.html">Gran Formato</a></li>
+                                <li><a href="Flexográfia.html">Flexográfia</a></li>
+                                <li><a href="Huecograbado.html">Huecograbado</a></li>
+                                <li><a href="Serigráfia.html">Serigráfia</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!--Aqui termina el header-->
+
+    <!--Seccion de Astro Diseño e Impresion-->
+    <!--Imagen-->
+   <!-- <div class="imagen">
+        <img src="img/Servicios.jpg" width="1360px" alt="Servicios">
+    </div>-->
+    <!--Termina Imagen-->
+
+   <!--Bloques Seccion de servicios-->
+    <div class="seccion contenedor">
+        <h3 class="centrar-texto">Servicios</h3>
+
+        <div class="contenedor-servicios">
+            <div class="servicio">
+                <!-- FIXME CHECA QUE ESTEN BIEN LAS EXTENSIONES DE CADA IMG -->
+                <!-- SI SON .jpg o .png -->
+                <!-- EL MISMO PROBLEMA TENIA TODAS LAS IMAGENES -->
+              <div class="imagen">
+                  <img src="img/Diseño Gráfico.jpg" width="360px" alt="Diseño Gráfico">
+              </div>
+
+                <div class="contenido-servicio">
+                    <h5>Diseño Gráfico</h5>
+                    <a href="#" class="boton">Más Información</a>
+                </div>
+            </div>
+
+            <div class="servicio">
+
+                <div class="imagen">
+                <img src="img/Offset.jpg" width="360px" alt="Offset">
+                </div>
+
+                <div class="contenido-servicio">
+                    <h5>Offset</h5>
+                    <a href="#" class="boton">Más Información</a>
+                </div>
+            </div>
+
+            <div class="servicio">
+
+                <div class="imagen">
+                <img src="img/Gran formato.jpg" width="360px" alt="Gran Formato">
+                </div>
+
+                <div class="contenido-servicio">
+                    <h5>Gran Formato</h5>
+                    <a href="#" class="boton">Más Información</a>
+                </div>
+            </div>
+        </div> <!-- FIXME NO TENIAS ESTA ETIQUETA -->
+    </section>
+    <!--Termina Seccion de Servicios-->
+
+    <!--Seccion de Productos-->
+    <section class="seccion contenedor">
+        <h3 class="centrar-texto">Productos</h3>
+        <div class="contenedor-productos">
+
+            <div class="producto">
+
+                <div class="imagen">
+                    <img src="img/Tarjetas de Presentacion.jpg" width="360px" alt="Tarjetas de presentacion">
+                </div>
+
+                <!-- FIXME LO TENIAS DE LA SIGUIENTE FORMA -->
+                <!-- <div class="producto"></div> -> No tenia contenido -->
+                <div class="producto">
+                    <h5>Tarjetas de Presentación</h5>
+                    <a href="#" class="boton">Más Información</a>
+                </div>
+            </div>
+
+            <div class="producto">
+
+                <div class="imagen">
+                    <img src="img/Folletos.jpg" width="360px" alt="Folletos">
+                </div>
+
+                <div class="contenido-producto">
+                    <h5>Folletos</h5>
+                    <a href="#" class="boton">Más Información</a>
+                </div>
+            </div>
+
+            <div class="producto">
+
+                <div class="imagen">
+                    <img src="img/Revista.jpg" width="360px" alt="Revistas">
+                </div>
+
+                <div class="contenido-producto">
+                    <h5>Revistas</h5>
+                    <a href="#" class="boton">Más Información</a>
+                </div>
+            </div>
+        </div>
+    </section> <!-- FIXME NO TENIAS ESTA ETIQUETA -->
+
+    <div class="info-contenedor">
+        <div class="info-main">
+            <h3>Contáctanos</h3>
+            <p>astro@diseño.com</p>
+            <a href="#">Más Información</a>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-main">
+                <div class="footer-columna">
+                    <h3>Suscríbete</h3>
+                    <input type="email" placeholder="Escribe tu Correo">
+
+                    <input type="submit" value="Suscríbete">
+
+                </div>
+                <div class="footer-columna">
+                    <h3>Dirección</h3>
+                    <span class="mapa-calle"><p>250  Av.Lopez Portillo - Cáncun</p></span>
+
+                    <span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
+
+                    <span class="correo"><p>astro@diseño.com</p></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copy-redes">
+            <div class="main-copy-redes">
+                <div class="footer-copy">
+                    &copy;Todos los derechos reservados - | Astro Diseño e Impresiones &copy; |.
+                </div>
+
+                <div class="footer-redes">
+                    <a href="#" class="Facebook">Facebook</a>
+                    <a href="#" class="Instagram">Instagram</a>
+                    <a href="#" class="Whatsapp">Whatsapp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

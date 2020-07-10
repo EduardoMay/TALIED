@@ -1,0 +1,40 @@
+body {
+    font-family: 'Lato', sans-serif;
+     
+}
+.desplegable ul {
+    display:flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.desplegable a{
+    display: block;
+    padding: 2rem;
+    /*background: black;*/
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+.desplegable a:hover {
+    background-color: rgb(49, 197, 216);
+}
+.desplegable ul li ul {
+    display: none;
+}
+.desplegable ul li a:hover + ul, .desplegable ul li ul:hover{
+    display: block;
+}
+.siteheader {
+    background-image: url(../img/Fondo.jpg);
+    height: 100vh;
+    min-height: 150px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.barra {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
