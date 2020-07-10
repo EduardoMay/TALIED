@@ -1,6 +1,6 @@
 /*font-family: 'Roboto'*/
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .desplegable ul {
     display:flex;
@@ -56,7 +56,6 @@ body {
 }
 h3 {
     font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 40px;
 }
 h5 {
@@ -120,10 +119,8 @@ img {
     box-sizing: border-box;
 }
 .info-contenedor {
-    margin: 4px;
     width: 100%;
     background: #f2f2f2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 .info-main {
@@ -190,7 +187,6 @@ footer {
 	border: 1px solid #00C6EE;
 	font-size: 14px;
 	padding: 10px;
-	font-family: Raleway;
 }
 
 .footer-main .footer-columna input[type="submit"] {
@@ -201,7 +197,6 @@ footer {
 	font-size: 18px;
 	margin-top: 10px;
 	cursor: pointer;
-	font-family: Raleway;
 }
 
 .footer-main .footer-columna span p {
