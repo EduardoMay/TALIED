@@ -1,6 +1,7 @@
 /*font-family: 'Roboto'*/
 body {
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background-color: #F6F5F5;
 }
 .desplegable ul {
     display:flex;
@@ -41,7 +42,6 @@ body {
 }
 .centrar-texto {
     text-align: center;
-    margin-top: 80pt;
 }
 .boton {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -76,14 +76,16 @@ img {
     margin: auto;
     margin-top: 3rem;
 }
-.seccion {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
 .contenedor {
     width: 95%;
     max-width: 120rem;
-    margin: 0 auto;
+    margin: auto;
+}
+.seccion {
+	background-color: #FFFFFF;
+	padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .servicio {
     flex-basis: calc(33.3% - 1rem);
