@@ -95,6 +95,7 @@ img {
 	flex-basis: calc(33.3% - 1rem);
 	background-color: #FFFFFF;
 	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+	overflow: hidden;
 }
 .contenido-servicio h5{
 	color: #FFFFFF;
@@ -103,11 +104,17 @@ img {
 .contenido-servicio {
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: -100%;
 	padding: 1rem;
 	width: 100%;
 	background: rgba(4, 137, 152, 0.5);
+	transition: .5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+
+.servicio:hover .contenido-servicio {
+	bottom: 0%;
+}
+
 .imagen {
     display: flex;
     justify-content: center;
