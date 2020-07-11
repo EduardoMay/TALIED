@@ -79,6 +79,11 @@ h5 {
 img {
     width: 100%;
 }
+
+.img-logo {
+	width: 30%;
+}
+
 .contenedor {
     width: 95%;
     max-width: 120rem;
@@ -178,6 +183,7 @@ footer {
 	padding: 50px 0;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .footer-main .footer-columna {
