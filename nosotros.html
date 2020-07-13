@@ -1,73 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Astro Diseño e Impresión</title>
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/stylewe.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!--Header de mi página-->
-    <div class="siteheader"> 
-    <header>
-        
-        <div class="barra">
-            <figure>
-            <img src="img/Logo.png" width="100px" alt="Logo Astro">
-            </figure>
-        
-        <nav class="desplegable">
-            <ul>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Astro Diseño e Impresión</title>
+		<link rel="stylesheet" href="style/normalize.css" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+	</head>
 
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="servicios.html">Servicios</a>
+	<body>
+		<!--Menu-->
+		<nav>
+			<div class="menu-logo">
+				<figure>
+					<img src="img/Logo.png" class="img-logo" width="200px" alt="Logo Astro" />
+				</figure>
+			</div>
+			<ul class="menu-contenedor">
+				<li class="menu-item"><a href="index.html">Inicio</a></li>
+				<li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
+				<li class="menu-item"><a href="contacto.html">Contacto</a></li>
+				<li class="menu-item submenu">
+					<a href="servicios.html">Servicios</a>
+					<ul class="submenu-contenedor">
+						<li class="submenu-item">
+							<a href="Diseño Gráfico.html">Diseño Gráfico</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Offset.html">Offset</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Gran Formato.html">Gran Formato</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Flexográfia.html">Flexográfia</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Huecograbado.html">Huecograbado</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Serigráfia.html">Serigráfia</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!--Aqui termina el menu-->
 
-            <ul>
-                  <li><a href="Diseño Gráfico.html">Diseño Gráfico</a></li>
-                  <li><a href="Offset.html">Offset</a></li>
-                  <li><a href="Gran Formato.html">Gran Formato</a></li>
-                  <li><a href="Flexográfia.html">Flexográfia</a></li>
-                  <li><a href="Huecograbado.html">Huecograbado</a></li>
-                  <li><a href="Serigráfia.html">Serigráfia</a></li>
-               </ul>
-            </li>
-        </ul>     
-        </nav>
-    </div>
-        
-    </header>
-</div>
+		<!--Seccion de Astro Diseño e Impresion-->
+		<!--Imagen-->
+		<div class="imagen-principal">
+			<img src="img/ImagenPrincipal.jpg" alt="imagen principal" />
+			<div class="imagen-descripcion">
+				<h1>Tiltulo de la imagen</h1>
+			</div>
+		</div>
+		<!-- termina imaagen-->
 
-<Section class="contenedor seccion">
-    <h3>Misión</h3>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, 
-        cupiditate officiis eveniet quasi ipsa nihil odio, ullam modi provident 
-        beatae repellat? Tenetur, modi. Reiciendis ratione illum omnis numquam 
-        rem beatae.
-    </p>
-</Section>
+		<div class="info-contenedor">
+			<div class="info-main">
+				<h3>Contáctanos</h3>
+				<p>astro@diseño.com</p>
+				<a href="#">Más Información</a>
+			</div>
+		</div>
 
-<Section class="contenedor seccion">
-    <h3>Visión</h3>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, 
-        cupiditate officiis eveniet quasi ipsa nihil odio, ullam modi provident 
-        beatae repellat? Tenetur, modi. Reiciendis ratione illum omnis numquam 
-        rem beatae.
-    </p>
-</Section>
+		<section class="footer">
+			<div class="footer-contenedor">
+				<div class="footer-main">
+					<div class="footer-columna">
+						<h3>Suscríbete</h3>
+						<input type="email" placeholder="Escribe tu Correo" />
 
-<Section class="contenedor seccion">
-    <h3>Valores</h3>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, 
-        cupiditate officiis eveniet quasi ipsa nihil odio, ullam modi provident 
-        beatae repellat? Tenetur, modi. Reiciendis ratione illum omnis numquam 
-        rem beatae.
-    </p>
-</Section>
+						<input type="submit" value="Suscríbete" />
+					</div>
+					<div class="footer-columna">
+						<h3>Dirección</h3>
+						<span class="mapa-calle"><p>250 Av.Lopez Portillo - Cáncun</p></span>
+
+						<span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
+
+						<span class="correo"><p>astro@diseño.com</p></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copy-redes">
+				<div class="main-copy-redes">
+					<div class="footer-copy">
+						&copy;Todos los derechos reservados - | Astro Diseño e Impresiones &copy; |.
+					</div>
+
+					<div class="footer-redes">
+						<a
+							href="https://www.facebook.com/?stype=lo&jlou=Afd-9pMb5VpqFZ6JCK8UEHwirqi4X9_C_QHftG4I91pCVAwJkbFe9m0ZgkL7btHNrmtxooF2bUv48iKjQK1Gi7j97Qd9aZQrfHeNSa4g_j91PA&smuh=56879&lh=Ac_aWX2M6UdZZShi"
+							target="_blank"
+							class="Facebook"
+							><i class="fa fa-facebook"></i
+						></a>
+						<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="Instagram"><i class="fa fa-instagram"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido'" target="_blank" class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

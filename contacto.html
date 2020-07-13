@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contacto</title>
 		<link rel="stylesheet" href="style/style.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="style/styleform.css" />
+		<link href=" https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap " rel="stylesheet " />
+		<link rel="stylesheet " href="style/styleform.css " />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,37 +15,46 @@
 		/>
 	</head>
 	<body>
+		<div class="contenido-buscar">
+			<form>
+				<div class="buscar">
+					<label for="text">Buscar</label>
+					<input for="text" id="text" />
+					<input type="submit" value="Buscar" />
+				</div>
+			</form>
+		</div>
 		<!--Menu-->
 		<nav>
 			<div class="menu-logo">
 				<figure>
-					<img src="img/Logo.png" class="img-logo" width="200px" alt="Logo Astro" />
+					<img src="img/Logo.png " class="img-logo" width="200px " alt="Logo Astro " />
 				</figure>
 			</div>
 			<ul class="menu-contenedor">
-				<li class="menu-item"><a href="index.html">Inicio</a></li>
-				<li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
-				<li class="menu-item"><a href="contacto.html">Contacto</a></li>
+				<li class="menu-item"><a href="index.html ">Inicio</a></li>
+				<li class="menu-item"><a href="nosotros.html ">Nosotros</a></li>
+				<li class="menu-item"><a href="contacto.html ">Contacto</a></li>
 				<li class="menu-item submenu">
 					<a href="servicios.html ">Servicios</a>
 					<ul class="submenu-contenedor">
 						<li class="submenu-item">
-							<a href="Diseño Gráfico.html">Diseño Gráfico</a>
+							<a href="Diseño Gráfico.html ">Diseño Gráfico</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Offset.html">Offset</a>
+							<a href="Offset.html ">Offset</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Gran Formato.html">Gran Formato</a>
+							<a href="Gran Formato.html ">Gran Formato</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Flexográfia.html">Flexográfia</a>
+							<a href="Flexográfia.html ">Flexográfia</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Huecograbado.html">Huecograbado</a>
+							<a href="Huecograbado.html ">Huecograbado</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Serigráfia.html">Serigráfia</a>
+							<a href="Serigráfia.html ">Serigráfia</a>
 						</li>
 					</ul>
 				</li>
@@ -56,7 +65,7 @@
 		<!--Seccion de Astro Diseño e Impresion-->
 		<!--Imagen-->
 		<div class="imagen-principal">
-			<img src="img/img-principal.jpg" alt="imagen principal" />
+			<img src="img/ImagenPrincipal.jpg " alt="imagen principal " />
 			<div class="imagen-descripcion">
 				<h1>Tiltulo de la imagen</h1>
 			</div>
@@ -64,46 +73,46 @@
 		<!-- termina imaagen-->
 		<h2>Fomulario de Contacto</h2>
 
-		<form action="mailto:lili_betzi97@hotmail.com" method="POST">
+		<form action="mailto:lili_betzi97@hotmail.com " method="POST ">
 			<label>Nombres:</label>
-			<input maxlength="50" type="text" required size="50" autofocus placeholder="Nombres" />
+			<input maxlength="50 " type="text " required size="50 " autofocus placeholder="Nombres " />
 			<!--NO OCUPAR EL BR(    es el espaciado entre region, se nace en css-->
 			<!--<br>-->
 			<!--no se ocupa, pero es para que no aparezca dorrido si no en la parte de abajo-->
 
 			<!--<br>-->
 			<label>Apellidos:</label>
-			<input maxlength="50" type="text" required size="50" autofocus placeholder="Apellidos" />
+			<input maxlength="50" type="text " required size="50 " autofocus placeholder="Apellidos" />
 
 			<!--<br>-->
 			<label>Email:</label>
-			<input maxlength="50" type="email" required size="50" autofocus placeholder="Coloca tu correo" />
+			<input maxlength="50 " type="email " required size="50 " autofocus placeholder="Coloca tu correo" />
 
 			<!--<br>-->
 			<!--input size="100 "-->
 			<label>Teléfono:</label>
-			<input type="tel" pattern="[0-9]" required size="50" placeholder="Número de 10 dígitos" />
+			<input type="tel " size="10 " placeholder="Número de 10 dígitos " />
 
 			<!--<br>-->
 			<label>Servicios:</label>
 			<!----MENU DE SELECCIÓN---->
-			<select name="Servicios" required>
-				<option value="Diseño Gráfico">Diseño Gráfico</option>
-				<option value="Offset">Offset</option>
-				<option value="Gran Formato">Gran Formato</option>
-				<option value="Flexográfia">Flexográfia</option>
-				<option value="Huecograbado">Huecograbado</option>
-				<option value="Serigráfia">Serigráfia</option>
-				<option value="Impresión">Impresión</option>
+			<select name="Servicios " required>
+				<option value="Diseño Gráfico ">Diseño Gráfico</option>
+				<option value="Offset ">Offset</option>
+				<option value="Gran Formato ">Gran Formato</option>
+				<option value="Flexográfia ">Flexográfia</option>
+				<option value="Huecograbado ">Huecograbado</option>
+				<option value="Serigráfia ">Serigráfia</option>
+				<option value="Impresión ">Impresión</option>
 			</select>
 			<!--<br>-->
 
 			<div>
-				<textarea name="observaciones" cols="80" rows="10"></textarea>
+				<textarea name="observaciones" cols="80 " rows="10 "> </textarea>
 			</div>
-			<input type="Submit" value="Enviar" />
+			<input type="Submit" value="Enviar " />
 		</form>
-		<button onclick="alert('Gracias por entrar a nuestra página web!')">
+		<button onclick="alert( 'Gracias por entrar a nuestra página web!') ">
 			Leer más ...
 		</button>
 
@@ -112,7 +121,7 @@
 			<div class="info-main">
 				<h3>Contáctanos</h3>
 				<p>astro@diseño.com</p>
-				<a href="#">Más Información</a>
+				<a href="# ">Más Información</a>
 			</div>
 		</div>
 
@@ -121,16 +130,82 @@
 				<div class="footer-main">
 					<div class="footer-columna">
 						<h3>Suscríbete</h3>
-						<input type="email" placeholder="Escribe tu Correo" />
-						<input type="submit" value="Suscríbete" />
+						<input type="email " placeholder="Escribe tu Correo " />
+
+						<input type="submit" value="Suscríbete " />
 					</div>
 					<div class="footer-columna">
 						<h3>Dirección</h3>
 						<span class="mapa-calle"><p>250 Av.Lopez Portillo - Cáncun</p></span>
+
 						<span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
+
 						<span class="correo"><p>astro@diseño.com</p></span>
 					</div>
 				</div>
+			</div>
+
+			<!-- Espacio de Contacto-->
+			<section class="imagen-contacto">
+				<div class="contenedor contenido-contacto">
+					<h2 class="heading2">Manténte en contacto con nosotros</h2>
+					<p>Llena el formulario de contacto para que nos podamos comunicar contigo a la brevedad.</p>
+					<a href="#" class="boton">Contáctanos</a>
+				</div>
+			</section>
+
+			<!-- Espacio blog y testimonios -->
+			<div class="seccion-inferior contenedor1">
+				<section class="blog">
+					<h3 class="centrar-texto">Nuestro blog</h3>
+
+					<article class="entrada-blog">
+						<div class="imagen">
+							<img src="img/690x500.png" class="imagen1" alt="imgblog1" />
+						</div>
+
+						<div class="texto-entrada">
+							<!--# poner index.html-->
+							<a href="#">
+								<h4>Excelente Publicación</h4>
+							</a>
+							<p>Escrito el: <span>04/07/2020</span> por: <span>Admin</span></p>
+							<p>
+								Mollis vulputate habitasse libero proin himenaeos neque arcu metus, aliquam praesent mauris facilisi nulla sodales augue, aliquet vitae erat tortor euismod donec
+								sapien.
+							</p>
+						</div>
+					</article>
+
+					<article class="entrada-blog">
+						<div class="imagen">
+							<img src="img/690x500.png" class="imagen1" alt="imgblog2" />
+						</div>
+
+						<div class="texto-entrada">
+							<a href="#">
+								<h4>Solicito Contacto</h4>
+							</a>
+							<p>Escrito el: <span>04/07/2020</span> por: <span>Admin</span></p>
+							<p>
+								Mollis vulputate habitasse libero proin himenaeos neque arcu metus, aliquam praesent mauris facilisi nulla sodales augue, aliquet vitae erat tortor euismod donec
+								sapien.
+							</p>
+						</div>
+					</article>
+				</section>
+
+				<!--Testimoniales-->
+				<section class="testimoniales">
+					<h3>Testimoniales</h3>
+					<div class="testimonial">
+						<blockquote>
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, optio! Eligendi autem debitis ab. Inventore optio veniam officiis consequuntur minima atque quo
+							minus neque illo.
+						</blockquote>
+						<p>Liliana Poot Cauich</p>
+					</div>
+				</section>
 			</div>
 
 			<div class="footer-copy-redes">
@@ -141,7 +216,7 @@
 
 					<div class="footer-redes">
 						<a href="https://www.facebook.com" target="_blank " class="Facebook"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.instagram.com/?hl=es-la " target="_blank" class="Instagram"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.instagram.com/?hl=es-la " target="_blank " class="Instagram"><i class="fa fa-instagram"></i></a>
 						<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido' " target="_blank " class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
 					</div>
 				</div>
