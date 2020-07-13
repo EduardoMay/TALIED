@@ -1,99 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link href="<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/styleform.css">
-</head>
-<body>
-    <div>
-        <header>    
-            <div class="barra">
-                <figure class="logo">
-                <img src="img/Logo.png" width="200px" alt="Logo Astro">
-                </figure>
-            <nav class="desplegable">
-                <ul>
-    
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-    
-                <li><a href="servicios.html">Servicios</a>
-    
-                <ul>
-                      <li><a href="Diseño Gráfico.html">Diseño Gráfico</a></li>
-                      <li><a href="Offset.html">Offset</a></li>
-                      <li><a href="Gran Formato.html">Gran Formato</a></li>
-                      <li><a href="Flexográfia.html">Flexográfia</a></li>
-                      <li><a href="Huecograbado.html">Huecograbado</a></li>
-                      <li><a href="Serigráfia.html">Serigráfia</a></li>
-                   </ul>
-                </li>
-            </ul>    
-               
-                      
-            </nav>
-        </div>
-            
-        </header>
-    </div>
-        <h2>Fomulario de Contacto</h2>
-    
-    <form action="mailto:lili_betzi97@hotmail.com" method="POST">
-        <label>Nombres:</label>
-        <input maxlength="50" type="text" required size="50"
-        autofocus placeholder="Nombres">
-        <!--NO OCUPAR EL BR(    es el espaciado entre region, se nace en css-->
-     <!--<br>--> <!--no se ocupa, pero es para que no aparezca dorrido si no en la parte de abajo-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contacto</title>
+		<link rel="stylesheet" href="style/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="style/styleform.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<!--Menu-->
+		<nav>
+			<div class="menu-logo">
+				<figure>
+					<img src="img/Logo.png" class="img-logo" width="200px" alt="Logo Astro" />
+				</figure>
+			</div>
+			<ul class="menu-contenedor">
+				<li class="menu-item"><a href="index.html">Inicio</a></li>
+				<li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
+				<li class="menu-item"><a href="contacto.html">Contacto</a></li>
+				<li class="menu-item submenu">
+					<a href="servicios.html ">Servicios</a>
+					<ul class="submenu-contenedor">
+						<li class="submenu-item">
+							<a href="Diseño Gráfico.html">Diseño Gráfico</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Offset.html">Offset</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Gran Formato.html">Gran Formato</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Flexográfia.html">Flexográfia</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Huecograbado.html">Huecograbado</a>
+						</li>
+						<li class="submenu-item">
+							<a href="Serigráfia.html">Serigráfia</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<!--Aqui termina el menu-->
 
-     <!--<br>-->
-        <label>Apellidos:</label>
-        <input maxlength="50" type="text" required size="50"
-        autofocus placeholder="Apellidos">
+		<!--Seccion de Astro Diseño e Impresion-->
+		<!--Imagen-->
+		<div class="imagen-principal">
+			<img src="img/img-principal.jpg" alt="imagen principal" />
+			<div class="imagen-descripcion">
+				<h1>Tiltulo de la imagen</h1>
+			</div>
+		</div>
+		<!-- termina imaagen-->
+		<h2>Fomulario de Contacto</h2>
 
-     <!--<br>-->
-        <label>Email:</label>
-        <input maxlength="50" type="email" required size="50"
-        autofocus placeholder="Coloca tu correo">
+		<form action="mailto:lili_betzi97@hotmail.com" method="POST">
+			<label>Nombres:</label>
+			<input maxlength="50" type="text" required size="50" autofocus placeholder="Nombres" />
+			<!--NO OCUPAR EL BR(    es el espaciado entre region, se nace en css-->
+			<!--<br>-->
+			<!--no se ocupa, pero es para que no aparezca dorrido si no en la parte de abajo-->
 
-     <!--<br>-->       <!--input size="100"-->
-        <label>Teléfono:</label>
-        <input type="tel" pattern="[0-9]" required size="50"
-        placeholder="Número de 10 dígitos"> 
+			<!--<br>-->
+			<label>Apellidos:</label>
+			<input maxlength="50" type="text" required size="50" autofocus placeholder="Apellidos" />
 
-    
-     <!--<br>-->
-        <label>Servicios:</label>
-    <!----MENU DE SELECCIÓN---->
-    <select name="Servicios" required>
-        <option value="Diseño Gráfico">Diseño Gráfico</option>
-        <option value="Offset">Offset</option>
-        <option value="Gran Formato">Gran Formato</option>
-        <option value="Flexográfia">Flexográfia</option>
-        <option value="Huecograbado">Huecograbado</option>
-        <option value="Serigráfia">Serigráfia</option>
-        <option value="Impresión">Impresión</option>
-    </select>
-<!--<br>-->        
-        
-    <div>
-        <textarea name="observaciones" cols="80" rows="10">
-        Hola me gustaria saber:
-        </textarea>
-    </div> 
-        <input type="Submit" value="Enviar">
-        </form>
-        <button onclick="alert('Gracias por entrar a nuestra página web!')">
-        Leer más ... </button>
+			<!--<br>-->
+			<label>Email:</label>
+			<input maxlength="50" type="email" required size="50" autofocus placeholder="Coloca tu correo" />
 
-</body>
-</html>
+			<!--<br>-->
+			<!--input size="100 "-->
+			<label>Teléfono:</label>
+			<input type="tel" pattern="[0-9]" required size="50" placeholder="Número de 10 dígitos" />
 
+			<!--<br>-->
+			<label>Servicios:</label>
+			<!----MENU DE SELECCIÓN---->
+			<select name="Servicios" required>
+				<option value="Diseño Gráfico">Diseño Gráfico</option>
+				<option value="Offset">Offset</option>
+				<option value="Gran Formato">Gran Formato</option>
+				<option value="Flexográfia">Flexográfia</option>
+				<option value="Huecograbado">Huecograbado</option>
+				<option value="Serigráfia">Serigráfia</option>
+				<option value="Impresión">Impresión</option>
+			</select>
+			<!--<br>-->
 
-    </form>
-</body>
+			<div>
+				<textarea name="observaciones" cols="80" rows="10"></textarea>
+			</div>
+			<input type="Submit" value="Enviar" />
+		</form>
+		<button onclick="alert('Gracias por entrar a nuestra página web!')">
+			Leer más ...
+		</button>
+
+		<!--Comienza el Footer-->
+		<div class="info-contenedor">
+			<div class="info-main">
+				<h3>Contáctanos</h3>
+				<p>astro@diseño.com</p>
+				<a href="#">Más Información</a>
+			</div>
+		</div>
+
+		<section class="footer">
+			<div class="footer-contenedor">
+				<div class="footer-main">
+					<div class="footer-columna">
+						<h3>Suscríbete</h3>
+						<input type="email" placeholder="Escribe tu Correo" />
+						<input type="submit" value="Suscríbete" />
+					</div>
+					<div class="footer-columna">
+						<h3>Dirección</h3>
+						<span class="mapa-calle"><p>250 Av.Lopez Portillo - Cáncun</p></span>
+						<span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
+						<span class="correo"><p>astro@diseño.com</p></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copy-redes">
+				<div class="main-copy-redes">
+					<div class="footer-copy">
+						&copy;Todos los derechos reservados - | Astro Diseño e Impresiones &copy; |.
+					</div>
+
+					<div class="footer-redes">
+						<a href="https://www.facebook.com" target="_blank " class="Facebook"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/?hl=es-la " target="_blank" class="Instagram"><i class="fa fa-instagram"></i></a>
+						<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido' " target="_blank " class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>

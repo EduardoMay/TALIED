@@ -10,41 +10,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-    <!--Header de mi página-->
-    <div class="siteheader">
-        <header>
-            <div class="barra">
-                <figure class="logo">
-                    <img src="img/Logo.png" class="img-logo" width="200px" alt="Logo Astro">
-                </figure>
-                <nav class="desplegable">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="servicios.html">Servicios</a>
-                            <ul>
-                                <li><a href="Diseño Gráfico.html">Diseño Gráfico</a></li>
-                                <li><a href="Offset.html">Offset</a></li>
-                                <li><a href="Gran Formato.html">Gran Formato</a></li>
-                                <li><a href="Flexográfia.html">Flexográfia</a></li>
-                                <li><a href="Huecograbado.html">Huecograbado</a></li>
-                                <li><a href="Serigráfia.html">Serigráfia</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    </div>
-    <!--Aqui termina el header-->
+    <!-- menu -->
+    <nav>
+        <div class="menu-logo">
+            <figure>
+                <img src="img/Logo.png" class="img-logo" width="200px" alt="Logo Astro">
+            </figure>
+        </div>
+        <ul class="menu-contenedor">
+            <li class="menu-item"><a href="index.html">Inicio</a></li>
+            <li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
+            <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+            <li class="menu-item submenu"><a href="servicios.html">Servicios</a>
+                <ul class="submenu-contenedor">
+                    <li class="submenu-item"><a href="Diseño Gráfico.html">Diseño Gráfico</a></li>
+                    <li class="submenu-item"><a href="Offset.html">Offset</a></li>
+                    <li class="submenu-item"><a href="Gran Formato.html">Gran Formato</a></li>
+                    <li class="submenu-item"><a href="Flexográfia.html">Flexográfia</a></li>
+                    <li class="submenu-item"><a href="Huecograbado.html">Huecograbado</a></li>
+                    <li class="submenu-item"><a href="Serigráfia.html">Serigráfia</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Aqui termina el menu -->
 
     <!--Seccion de Astro Diseño e Impresion-->
-    <!--Imagen-->
-   <!-- <div class="imagen">
-        <img src="img/Servicios.jpg" width="1360px" alt="Servicios">
-    </div> -->
-    <!--Termina Imagen
+    <div class="imagen-principal">
+        <img src="img/img-principal.jpg" alt="imagen principal de Astro">
+        <div class="imagen-descripcion">
+            <h1>Titulo de la imagen</h1>
+        </div>
+    </div>
 
    <!--Bloques Seccion de servicios-->
     <section class="seccion contenedor">
@@ -146,16 +143,12 @@
                 <div class="footer-columna">
                     <h3>Suscríbete</h3>
                     <input type="email" placeholder="Escribe tu Correo">
-
                     <input type="submit" value="Suscríbete">
-
                 </div>
                 <div class="footer-columna">
                     <h3>Dirección</h3>
                     <span class="mapa-calle"><p>250  Av.Lopez Portillo - Cáncun</p></span>
-
                     <span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
-
                     <span class="correo"><p>astro@diseño.com</p></span>
                 </div>
             </div>
@@ -174,7 +167,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 </body>
 </html>

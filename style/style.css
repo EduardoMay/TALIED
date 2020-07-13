@@ -3,43 +3,116 @@ body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #F6F5F5;
 }
-.desplegable ul {
-    display:flex;
-    padding: 0;
-    /*margin: ;*/
-    list-style: none;
+
+/* MENU */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(4, 137, 152, 0.5);
 }
-.desplegable a{
-    display: block;
-    padding: 1rem;
-    /*background: black;*/
-    text-decoration: none;
-    color: rgb(253, 249, 249);
+
+.menu-logo {
+	padding: 0 2rem;
 }
-.desplegable a:hover {
-    background-color: rgb(60, 118, 241);
+
+.menu-contenedor {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
-.desplegable ul li ul {
-    display: none;
+
+.menu-item {
+	padding: 0 .5rem;
 }
-.desplegable ul li a:hover + ul, .desplegable ul li ul:hover{
-    display: block;
+
+.menu-item, .submenu-item {
+	list-style: none;
 }
-.siteheader {
-    background-image: url(../img/Fondo.jpg);
-    height: 80vh;
-    min-height: 150px;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+
+.menu-item a{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	transition: .3s all;
 }
-.barra {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    justify-content: space-between;
-    /*border: 3px solid red;*/
+
+.menu-item a:hover {
+	background-color: rosybrown;
 }
+
+.submenu {
+	position: relative;
+}
+
+.submenu-contenedor {
+	display: block;
+	background-color: #FFFFFF;
+	position: absolute;
+	right: 0;
+	top: 200%;
+	z-index: 10;
+	transform: scale(.4);
+	transform-origin: 70% top;
+	visibility: hidden;
+	opacity: 0;
+	transition: .3s all;
+}
+
+.submenu:hover .submenu-contenedor {
+	top: 200%;
+	transform: scale(1);
+	visibility: visible;
+	opacity: 100;
+}
+
+.submenu-item a {
+	display: inline-block;
+	width: 100%;
+	color: rgba(4, 137, 152, 1);
+}
+
+.submenu-item a:hover {
+	color: #FFFFFF;
+}
+
+/* IMAGEN PRINCIPAL */
+.imagen-principal {
+	height: 500px;
+	position: relative;
+}
+
+.imagen-principal img{
+	height: 500px;
+	object-fit: cover;
+}
+
+.imagen-descripcion {
+	color: #FFFFFF;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: flex-end;
+	background-color: rgba(0, 0, 0, 0);
+	transition: .3s;
+}
+
+.imagen-principal:hover .imagen-descripcion{
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.imagen-descripcion h1 {
+	transition: .3s;
+}
+
+.imagen-descripcion:hover h1 {
+	padding-left: 1rem;
+}
+
 .centrar-texto {
 	text-align: center;
 	margin: 1rem 0;
