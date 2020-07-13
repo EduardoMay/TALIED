@@ -80,12 +80,12 @@ nav {
 /*Imagen Principal*/
 
 .imagen-principal {
-	height: 500%;
+	height: 500px;
 	position: relative;
 }
 
 .imagen-principal img {
-	height: 500%;
+	height: 500px;
 	object-fit: cover;
 }
 
