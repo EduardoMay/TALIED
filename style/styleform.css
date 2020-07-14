@@ -94,18 +94,6 @@ nav {
 	color: #ffffff;
 }
 
-/*Imagen Principal*/
-
-.imagen-principal {
-	height: 500%;
-	position: relative;
-}
-
-.imagen-principal img {
-	height: 500%;
-	object-fit: cover;
-}
-
 /*Texto*/
 
 .imagen-descripcion {
@@ -169,13 +157,6 @@ nav {
 	justify-content: space-between;
 }
 
-h2 {
-	font-family: Helvetica;
-	background-color: blue;
-	text-align: center;
-	color: white;
-}
-
 form {
 	padding: 20px;
 	font-family: Helvetica;
@@ -185,15 +166,6 @@ label {
 	margin: 15px, 0px;
 	clear: both;
 	display: block;
-}
-
-input {
-	padding: 5px;
-	border: solid 1px blue;
-}
-
-:focus {
-	border-color: darkblue;
 }
 
 input [type='submit'] {
@@ -213,12 +185,7 @@ input [type='submit'] {
 	display: flex;
 	align-items: center;
 }
-.contenedor {
-	max-width: 120rem;
-	width: 80%;
-	margin: 0 auto;
-	padding: 50px;
-}
+
 /*.contenedor1 {
     width: 95%;
     max-width: 1200px;
@@ -231,24 +198,8 @@ input [type='submit'] {
 .contenido-contacto p {
 	font-size: 18px;
 }
-.boton {
-	font-family: 'Noto Serif', serif;
-	color: white;
-	text-decoration: none;
-	font-size: 18px;
-	background-color: blue;
-	padding: 10px 30px;
-	margin-top: 10px;
-	display: block;
-	text-align: center;
-	display: inline-block;
-	flex: 0 auto;
-}
 .centrar-texto {
 	text-align: center;
-}
-.boton:hover {
-	background-color: rgb(2, 2, 116);
 }
 .imagen1 {
 	width: 200px;

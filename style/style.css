@@ -5,6 +5,7 @@ body {
 	background-color: #f6f5f5;
 }
 
+/* CUSTOM */
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -125,16 +126,20 @@ nav {
 .boton {
 	color: #ffffff;
 	background-color: #981304;
-	text-decoration: none;
+	border: 1px solid transparent;
+	outline: none;
 	font-size: 18px;
-	padding: 1rem 1rem;
+	padding: 1rem 1.5rem;
 	display: inline-block;
+	cursor: pointer;
+	border-radius: 0.25rem;
 	transition: 0.3s all;
 }
 
 .boton:hover {
 	color: #981304;
 	background-color: #ffffff;
+	border: 1px solid #981304;
 }
 
 h3 {
@@ -164,9 +169,12 @@ img {
 }
 
 .contenedor {
+	display: block;
+	border-radius: 5px;
 	width: 95%;
-	max-width: 120rem;
-	margin: 0 auto;
+	margin: 2rem auto;
+	background-color: #ffffff;
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 .seccion {
@@ -313,7 +321,6 @@ footer {
 	font-size: 18px;
 	margin-top: 10px;
 	cursor: pointer;
-	font-family: Raleway;
 }
 
 .footer-main .footer-columna span p {
@@ -410,4 +417,45 @@ footer {
 		width: 80%;
 		margin: auto;
 	}
+}
+
+.formulario-contenedor {
+	padding: 1rem;
+	text-align: center;
+	width: 70%;
+	margin: 3rem auto;
+}
+
+.formulario-titulo {
+	font-size: 2rem;
+}
+
+.formulario-control {
+	text-align: left;
+	padding: 1rem;
+}
+
+input,
+.formulario-control textarea,
+.formulario-control select {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	outline: 0;
+	transition: 0.3s all;
+}
+
+input:focus,
+.formulario-control textarea:focus,
+.formulario-control select:focus {
+	color: #495057;
+	border-color: rgba(4, 137, 152, 1);
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(4, 137, 152, 0.25);
+}
+
+.formulario-boton {
+	padding: 1rem;
+	text-align: right;
 }

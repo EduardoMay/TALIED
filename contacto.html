@@ -6,7 +6,7 @@
 		<title>Contacto</title>
 		<link rel="stylesheet" href="style/style.css" />
 		<link href=" https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap " rel="stylesheet " />
-		<link rel="stylesheet " href="style/styleform.css " />
+		<!-- <link rel="stylesheet " href="style/styleform.css " /> -->
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,15 +15,6 @@
 		/>
 	</head>
 	<body>
-		<div class="contenido-buscar">
-			<form>
-				<div class="buscar">
-					<label for="text">Buscar</label>
-					<input for="text" id="text" />
-					<input type="submit" value="Buscar" />
-				</div>
-			</form>
-		</div>
 		<!--Menu-->
 		<nav>
 			<div class="menu-logo">
@@ -71,50 +62,55 @@
 			</div>
 		</div>
 		<!-- termina imaagen-->
-		<h2>Fomulario de Contacto</h2>
+		<seccion class="contenedor formulario-contenedor">
+			<h2 class="formulario-titulo">Fomulario de Contacto</h2>
 
-		<form action="mailto:lili_betzi97@hotmail.com " method="POST ">
-			<label>Nombres:</label>
-			<input maxlength="50 " type="text " required size="50 " autofocus placeholder="Nombres " />
-			<!--NO OCUPAR EL BR(    es el espaciado entre region, se nace en css-->
-			<!--<br>-->
-			<!--no se ocupa, pero es para que no aparezca dorrido si no en la parte de abajo-->
+			<form action="mailto:" method="POST ">
+				<div class="formulario-control">
+					<label>Nombres:</label>
+					<input maxlength="50 " type="text " required size="50 " autofocus placeholder="Nombres " />
+				</div>
 
-			<!--<br>-->
-			<label>Apellidos:</label>
-			<input maxlength="50" type="text " required size="50 " autofocus placeholder="Apellidos" />
+				<div class="formulario-control">
+					<label>Apellidos:</label>
+					<input maxlength="50" type="text " required size="50 " autofocus placeholder="Apellidos" />
+				</div>
 
-			<!--<br>-->
-			<label>Email:</label>
-			<input maxlength="50 " type="email " required size="50 " autofocus placeholder="Coloca tu correo" />
+				<div class="formulario-control">
+					<label>Email:</label>
+					<input maxlength="50 " type="email " required size="50 " autofocus placeholder="Coloca tu correo" />
+				</div>
 
-			<!--<br>-->
-			<!--input size="100 "-->
-			<label>Teléfono:</label>
-			<input type="tel " size="10 " placeholder="Número de 10 dígitos " />
+				<div class="formulario-control">
+					<label>Teléfono:</label>
+					<input type="tel " size="10 " placeholder="Número de 10 dígitos " />
+				</div>
 
-			<!--<br>-->
-			<label>Servicios:</label>
-			<!----MENU DE SELECCIÓN---->
-			<select name="Servicios " required>
-				<option value="Diseño Gráfico ">Diseño Gráfico</option>
-				<option value="Offset ">Offset</option>
-				<option value="Gran Formato ">Gran Formato</option>
-				<option value="Flexográfia ">Flexográfia</option>
-				<option value="Huecograbado ">Huecograbado</option>
-				<option value="Serigráfia ">Serigráfia</option>
-				<option value="Impresión ">Impresión</option>
-			</select>
-			<!--<br>-->
+				<div class="formulario-control">
+					<label>Servicios:</label>
+					<select name="Servicios " required>
+						<option value="Diseño Gráfico ">Diseño Gráfico</option>
+						<option value="Offset ">Offset</option>
+						<option value="Gran Formato ">Gran Formato</option>
+						<option value="Flexográfia ">Flexográfia</option>
+						<option value="Huecograbado ">Huecograbado</option>
+						<option value="Serigráfia ">Serigráfia</option>
+						<option value="Impresión ">Impresión</option>
+					</select>
+				</div>
 
-			<div>
-				<textarea name="observaciones" cols="80 " rows="10 "> </textarea>
-			</div>
-			<input type="Submit" value="Enviar " />
-		</form>
-		<button onclick="alert( 'Gracias por entrar a nuestra página web!') ">
-			Leer más ...
-		</button>
+				<div class="formulario-control">
+					<textarea name="observaciones" rows="10"> </textarea>
+				</div>
+
+				<div class="formulario-boton">
+					<button type="submit" class="boton">Enviar</button>
+				</div>
+				<!-- <button onclick="alert( 'Gracias por entrar a nuestra página web!') ">
+					Leer más ...
+				</button> -->
+			</form>
+		</seccion>
 
 		<!--Comienza el Footer-->
 		<div class="info-contenedor">
@@ -143,69 +139,6 @@
 						<span class="correo"><p>astro@diseño.com</p></span>
 					</div>
 				</div>
-			</div>
-
-			<!-- Espacio de Contacto-->
-			<section class="imagen-contacto">
-				<div class="contenedor contenido-contacto">
-					<h2 class="heading2">Manténte en contacto con nosotros</h2>
-					<p>Llena el formulario de contacto para que nos podamos comunicar contigo a la brevedad.</p>
-					<a href="#" class="boton">Contáctanos</a>
-				</div>
-			</section>
-
-			<!-- Espacio blog y testimonios -->
-			<div class="seccion-inferior contenedor1">
-				<section class="blog">
-					<h3 class="centrar-texto">Nuestro blog</h3>
-
-					<article class="entrada-blog">
-						<div class="imagen">
-							<img src="img/690x500.png" class="imagen1" alt="imgblog1" />
-						</div>
-
-						<div class="texto-entrada">
-							<!--# poner index.html-->
-							<a href="#">
-								<h4>Excelente Publicación</h4>
-							</a>
-							<p>Escrito el: <span>04/07/2020</span> por: <span>Admin</span></p>
-							<p>
-								Mollis vulputate habitasse libero proin himenaeos neque arcu metus, aliquam praesent mauris facilisi nulla sodales augue, aliquet vitae erat tortor euismod donec
-								sapien.
-							</p>
-						</div>
-					</article>
-
-					<article class="entrada-blog">
-						<div class="imagen">
-							<img src="img/690x500.png" class="imagen1" alt="imgblog2" />
-						</div>
-
-						<div class="texto-entrada">
-							<a href="#">
-								<h4>Solicito Contacto</h4>
-							</a>
-							<p>Escrito el: <span>04/07/2020</span> por: <span>Admin</span></p>
-							<p>
-								Mollis vulputate habitasse libero proin himenaeos neque arcu metus, aliquam praesent mauris facilisi nulla sodales augue, aliquet vitae erat tortor euismod donec
-								sapien.
-							</p>
-						</div>
-					</article>
-				</section>
-
-				<!--Testimoniales-->
-				<section class="testimoniales">
-					<h3>Testimoniales</h3>
-					<div class="testimonial">
-						<blockquote>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, optio! Eligendi autem debitis ab. Inventore optio veniam officiis consequuntur minima atque quo
-							minus neque illo.
-						</blockquote>
-						<p>Liliana Poot Cauich</p>
-					</div>
-				</section>
 			</div>
 
 			<div class="footer-copy-redes">
