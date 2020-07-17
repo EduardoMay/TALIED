@@ -6,7 +6,7 @@
 		<title>Astro Diseño e Impresión</title>
 		<link rel="stylesheet" href="style/normalize.css" />
 		<link rel="stylesheet" href="style/style.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -31,22 +31,22 @@
 					<a href="servicios.html">Servicios</a>
 					<ul class="submenu-contenedor">
 						<li class="submenu-item">
-							<a href="Diseño Gráfico.html">Diseño Gráfico</a>
+							<a href="Diseño Gráfico.html">Copias</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Offset.html">Offset</a>
+							<a href="Offset.html">Engargolado</a>
 						</li>
 						<li class="submenu-item">
 							<a href="Gran Formato.html">Gran Formato</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Flexográfia.html">Flexográfia</a>
+							<a href="Flexográfia.html">Impresion</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Huecograbado.html">Huecograbado</a>
+							<a href="Huecograbado.html">Promocional</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Serigráfia.html">Serigráfia</a>
+							<a href="Serigráfia.html">Promociones</a>
 						</li>
 					</ul>
 				</li>
@@ -55,142 +55,40 @@
 		<!--Aqui termina el menu-->
 
 		<!--Seccion de Astro Diseño e Impresion-->
-		<!--Imagen-->
 		<div class="imagen-principal">
-			<img src="img/ImagenPrincipal.jpg" alt="imagen principal" />
+			<div class="imagen-fondo">
+				<svg width="734" height="703" viewBox="0 0 734 703" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M8.31392 1.33984C8.31392 1.33984 -44.3698 137.309 119.642 76.931C283.653 16.5527 258.236 99.9276 236.108 141.96C212.129 187.539 180.135 215.285 183.013 260.352C186.764 319.469 262.09 321.656 325.273 359.255C477.809 450.059 305.491 374.428 247.377 417.86C189.264 461.291 224.718 493.628 305.114 490.318C478.751 483.145 421.169 550.736 392.155 581.339C363.141 611.941 368.177 681.838 504.801 634.544C641.426 587.25 590.078 701.543 590.078 701.543H733.948V1.33984H8.31392Z"
+						fill="url(#paint0_linear)"
+					/>
+					<path
+						d="M572.78 1.33954C572.78 1.33954 376.415 -10.4445 341.458 137.94C303.367 299.704 425.194 375.748 466.488 338.623C507.782 301.497 509.683 251.031 445.353 217.728C381.022 184.425 387.496 81.7586 528.146 107.376C668.796 132.993 685.118 338.938 583.211 388.202C481.303 437.467 506.138 495.48 615.753 557.12C725.368 618.759 665.422 701.425 665.422 701.425H733.931V1.33954H572.78Z"
+						fill="url(#paint1_linear)"
+					/>
+					<defs>
+						<linearGradient id="paint0_linear" x1="0.246939" y1="351.432" x2="734" y2="351.432" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#B22357" />
+							<stop offset="1" stop-color="#DD2C85" />
+						</linearGradient>
+						<linearGradient id="paint1_linear" x1="174766" y1="-119618" x2="311970" y2="255522" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#B22357" />
+							<stop offset="1" stop-color="#DD2C85" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</div>
+			<div class="imagen-fondo-figura">
+				<img src="img/fondo-1.svg" alt="" />
+			</div>
 			<div class="imagen-descripcion">
-				<h1>Tiltulo de la imagen</h1>
+				<h1>ASTRO</h1>
+				<p>Somos especialistas en la comunicacion impresa para la industria turistica.</p>
+				<form class="buscador-contenedor">
+					<input type="text" placeholder="Buscar" />
+					<button class="formulario-boton" type="submit"><i class="fa fa-search"></i></button>
+				</form>
 			</div>
 		</div>
-		<!-- termina imaagen-->
-		<!--Bloques Seccion de servicios-->
-		<section class="seccion contenedor">
-			<h3 class="centrar-texto">Servicios</h3>
-
-			<div class="contenedor-servicios">
-				<div class="servicio">
-					<!-- FIXME CHECA QUE ESTEN BIEN LAS EXTENSIONES DE CADA IMG -->
-					<!-- SI SON .jpg o .png -->
-					<!-- EL MISMO PROBLEMA TENIA TODAS LAS IMAGENES -->
-					<div class="imagen">
-						<img src="img/Diseño Gráfico.jpg" width="360px" alt="Diseño Gráfico" />
-					</div>
-
-					<div class="contenido-servicio">
-						<h5>Diseño Gráfico</h5>
-						<a href="#" class="boton">Más Información</a>
-					</div>
-				</div>
-
-				<div class="servicio">
-					<div class="imagen">
-						<img src="img/Offset.jpg" width="360px" alt="Offset" />
-					</div>
-
-					<div class="contenido-servicio">
-						<h5>Offset</h5>
-						<a href="#" class="boton">Más Información</a>
-					</div>
-				</div>
-
-				<div class="servicio">
-					<div class="imagen">
-						<img src="img/Gran formato.jpg" width="360px" alt="Gran Formato" />
-					</div>
-
-					<div class="contenido-servicio">
-						<h5>Gran Formato</h5>
-						<a href="#" class="boton">Más Información</a>
-					</div>
-				</div>
-			</div>
-			<!-- FIXME NO TENIAS ESTA ETIQUETA -->
-		</section>
-		<!--Termina Seccion de Servicios-->
-
-		<!--Seccion de Productos-->
-		<section class="seccion contenedor">
-			<h3 class="centrar-texto">Productos</h3>
-			<div class="contenedor-productos">
-				<div class="producto">
-					<div class="imagen">
-						<img src="img/Tarjetas de Presentacion.jpg" width="360px" alt="Tarjetas de presentacion" />
-					</div>
-
-					<!-- FIXME LO TENIAS DE LA SIGUIENTE FORMA -->
-					<!-- <div class="producto"></div> -> No tenia contenido -->
-					<div class="contenido-producto">
-						<h5>Tarjetas de Presentación</h5>
-						<a href="#" class="boton">Más Información</a>
-					</div>
-				</div>
-
-				<div class="producto">
-					<div class="imagen">
-						<img src="img/Folletos.jpg" width="360px" alt="Folletos" />
-					</div>
-
-					<div class="contenido-producto">
-						<h5>Folletos</h5>
-						<a href="#" class="boton">Más Información</a>
-					</div>
-				</div>
-
-				<div class="producto">
-					<div class="imagen">
-						<img src="img/Revista.jpg" width="360px" alt="Revistas" />
-					</div>
-
-					<div class="contenido-producto">
-						<h5>Revistas</h5>
-						<a href="#" class="boton">Más Información</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- FIXME NO TENIAS ESTA ETIQUETA -->
-
-		<div class="info-contenedor">
-			<div class="info-main">
-				<h3>Contáctanos</h3>
-				<p>astro@diseño.com</p>
-				<a href="#">Más Información</a>
-			</div>
-		</div>
-
-		<section class="footer">
-			<div class="footer-contenedor">
-				<div class="footer-main">
-					<div class="footer-columna">
-						<h3>Suscríbete</h3>
-						<input type="email" placeholder="Escribe tu Correo" />
-
-						<input type="submit" value="Suscríbete" />
-					</div>
-					<div class="footer-columna">
-						<h3>Dirección</h3>
-						<span class="mapa-calle"><p>250 Av.Lopez Portillo - Cáncun</p></span>
-
-						<span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
-
-						<span class="correo"><p>astro@diseño.com</p></span>
-					</div>
-				</div>
-			</div>
-
-			<div class="footer-copy-redes">
-				<div class="main-copy-redes">
-					<div class="footer-copy">
-						&copy;Todos los derechos reservados - | Astro Diseño e Impresiones &copy; |.
-					</div>
-
-					<div class="footer-redes">
-						<a href="https://www.facebook.com" target="_blank" class="Facebook"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="Instagram"><i class="fa fa-instagram"></i></a>
-						<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido'" target="_blank" class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-					</div>
-				</div>
-			</div>
-		</section>
 	</body>
 </html>
