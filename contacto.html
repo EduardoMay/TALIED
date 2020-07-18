@@ -4,9 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contacto</title>
+		<link rel="stylesheet" href="style/normalize.css" />
 		<link rel="stylesheet" href="style/style.css" />
-		<link href=" https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap " rel="stylesheet " />
-		<!-- <link rel="stylesheet " href="style/styleform.css " /> -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -17,35 +17,37 @@
 	<body>
 		<!--Menu-->
 		<nav>
+			<input type="checkbox" id="btn-menu" class="checkbox" />
+			<label for="btn-menu"><i class="fa fa-bars"></i></label>
 			<div class="menu-logo">
 				<figure>
-					<img src="img/Logo.png " class="img-logo" width="200px" alt="Logo Astro " />
+					<img src="img/Logo.png" class="img-logo" width="200px" alt="Logo Astro" />
 				</figure>
 			</div>
 			<ul class="menu-contenedor">
-				<li class="menu-item"><a href="index.html ">Inicio</a></li>
-				<li class="menu-item"><a href="nosotros.html ">Nosotros</a></li>
-				<li class="menu-item"><a href="contacto.html ">Contacto</a></li>
+				<li class="menu-item"><a href="index.html">Inicio</a></li>
+				<li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
+				<li class="menu-item"><a href="contacto.html">Contacto</a></li>
 				<li class="menu-item submenu">
-					<a href="servicios.html ">Servicios</a>
+					<span>Servicios</span>
 					<ul class="submenu-contenedor">
 						<li class="submenu-item">
-							<a href="Diseño Gráfico.html">Diseño Gráfico</a>
+							<a href="Diseño Gráfico.html">Copias</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Offset.html">Offset</a>
+							<a href="Offset.html">Engargolado</a>
 						</li>
 						<li class="submenu-item">
 							<a href="Gran Formato.html">Gran Formato</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Flexográfia.html">Flexográfia</a>
+							<a href="Flexográfia.html">Impresion</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Huecograbado.html">Huecograbado</a>
+							<a href="Huecograbado.html">Promocional</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Serigráfia.html">Serigráfia</a>
+							<a href="Serigráfia.html">Promociones</a>
 						</li>
 					</ul>
 				</li>
@@ -53,14 +55,39 @@
 		</nav>
 		<!--Aqui termina el menu-->
 
-		<!--Seccion de Astro Diseño e Impresion-->
-		<!--Imagen-->
-		<div class="imagen-principal">
-			<img src="img/ImagenPrincipal.jpg" alt="imagen principal " />
-			<div class="imagen-descripcion">
-				<h1>Tiltulo de la imagen</h1>
+		<!-- IMAGEN PRINCIPAL -->
+		<section class="imagen-principal">
+			<div class="imagen-fondo">
+				<svg width="840" height="700" viewBox="0 0 840 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M9.51459 1.33398C9.51459 1.33398 -50.7774 136.723 136.92 76.6026C324.617 16.4819 295.529 99.501 270.205 141.354C242.764 186.739 206.15 214.366 209.442 259.241C213.735 318.106 299.939 320.284 372.247 357.722C546.811 448.138 349.608 372.83 283.102 416.076C216.597 459.323 257.17 491.522 349.176 488.225C547.889 481.083 481.991 548.385 448.788 578.858C415.584 609.33 421.347 678.928 577.702 631.836C734.057 584.744 675.294 698.55 675.294 698.55H839.941V1.33398H9.51459Z"
+						fill="url(#paint0_linear)"
+					/>
+					<path
+						d="M655.498 1.3342C655.498 1.3342 430.775 -10.3995 390.769 137.351C347.177 298.425 486.598 374.145 533.855 337.178C581.113 300.211 583.288 249.96 509.668 216.799C436.047 183.639 443.456 81.4101 604.418 106.918C765.38 132.426 784.059 337.492 667.434 386.546C550.81 435.6 579.231 493.366 704.676 554.743C830.121 616.119 761.518 698.432 761.518 698.432H839.921V1.3342H655.498Z"
+						fill="url(#paint1_linear)"
+					/>
+					<defs>
+						<linearGradient id="paint0_linear" x1="0.282625" y1="349.932" x2="840" y2="349.932" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#0074AF" />
+							<stop offset="1" stop-color="#1DFFE4" />
+						</linearGradient>
+						<linearGradient id="paint1_linear" x1="200004" y1="-119108" x2="322382" y2="265455" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#0074AF" />
+							<stop offset="1" stop-color="#1DFFE4" />
+						</linearGradient>
+					</defs>
+				</svg>
 			</div>
-		</div>
+			<div class="imagen-fondo-figura">
+				<img class="contacto" src="img/undraw_contact_us_15o2.svg" alt="" />
+			</div>
+			<div class="imagen-descripcion">
+				<h1>CONTACTO</h1>
+				<p>Nos encantara resolver cualquiera de tus dudas acerca de nuestros servicios y productos.</p>
+			</div>
+		</section>
+
 		<!-- termina imaagen-->
 		<seccion class="contenedor formulario-contenedor">
 			<h2 class="formulario-titulo">Fomulario de Contacto</h2>
@@ -113,47 +140,43 @@
 		</seccion>
 
 		<!--Comienza el Footer-->
-		<div class="info-contenedor">
-			<div class="info-main">
-				<h3>Contáctanos</h3>
-				<p>astro@diseño.com</p>
-				<a href="# ">Más Información</a>
-			</div>
-		</div>
-
-		<section class="footer">
-			<div class="footer-contenedor">
-				<div class="footer-main">
-					<div class="footer-columna">
-						<h3>Suscríbete</h3>
-						<input type="email " placeholder="Escribe tu Correo " />
-
-						<input type="submit" value="Suscríbete " />
+		<footer>
+			<section class="contenedor contacto-subscribete-contenedor">
+				<div>
+					<h4>CONTACTO</h4>
+					<div>
+						<p>Email:</p>
+						<p>el_creador_lalo@outlook.com</p>
 					</div>
-					<div class="footer-columna">
-						<h3>Dirección</h3>
-						<span class="mapa-calle"><p>250 Av.Lopez Portillo - Cáncun</p></span>
-
-						<span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
-
-						<span class="correo"><p>astro@diseño.com</p></span>
+					<div class="mt-3">
+						<p>Direccion:</p>
+						<p>Mexico, Cancun, Quintana Roo</p>
+						<p>Region 100 Mz 87 Lt 1</p>
+						<p>C. P. 77510</p>
 					</div>
 				</div>
-			</div>
-
-			<div class="footer-copy-redes">
-				<div class="main-copy-redes">
-					<div class="footer-copy">
-						&copy;Todos los derechos reservados - | Astro Diseño e Impresiones &copy; |.
-					</div>
-
-					<div class="footer-redes">
-						<a href="https://www.facebook.com" target="_blank " class="Facebook"><i class="fa fa-facebook"></i></a>
-						<a href="https://www.instagram.com/?hl=es-la " target="_blank " class="Instagram"><i class="fa fa-instagram"></i></a>
-						<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido' " target="_blank " class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-					</div>
+				<div>
+					<h4>Subscribete</h4>
+					<form class="texto-derecha">
+						<input type="text" placeholder="Correo" />
+						<input type="submit" value="Enviar" />
+					</form>
 				</div>
-			</div>
-		</section>
+			</section>
+			<section class="contenedor contenedor-social">
+				<div class="contenedor-social-item">
+					<a href="https://www.facebook.com" target="_blank" class="Facebook"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="contenedor-social-item">
+					<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="Instagram"><i class="fa fa-instagram"></i></a>
+				</div>
+				<div class="contenedor-social-item">
+					<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido'" target="_blank" class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+				</div>
+			</section>
+			<section class="texto-centro contenedor-derechos">
+				2020 Astro. Todos los Derechos Reservados
+			</section>
+		</footer>
 	</body>
 </html>
