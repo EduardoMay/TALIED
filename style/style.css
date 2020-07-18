@@ -363,17 +363,26 @@ nav {
 }
 
 @media (max-width: 575.98px) {
+	.imagen-principal,
+	.imagen-fondo {
+		height: 600px;
+	}
+
 	.imagen-descripcion {
 		width: 100%;
-		padding: 0;
+		padding: 0 1rem;
 	}
 
 	.buscador-contenedor input[type='text'] {
 		width: 80%;
 	}
 
-	.imagen-fondo-figura img {
+	.imagen-fondo-figura .index {
 		width: 80%;
+	}
+
+	.imagen-fondo-figura .contacto {
+		width: 100%;
 	}
 }
 
