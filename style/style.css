@@ -135,7 +135,7 @@ input[type='submit'] {
 	color: #ffffff;
 	box-shadow: -6px -6px 20px #ffffff, 6px 6px 20px rgba(0, 0, 0, 0.3), inset 0px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 0px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
-	transition: 0.5s all;
+	transition: 0.2s all;
 }
 
 .boton-1:active,
@@ -312,9 +312,10 @@ nav {
 }
 
 .imagen-fondo {
-	width: 100%;
+	width: 66%;
 	height: 700px;
 	text-align: right;
+	margin-left: auto;
 }
 
 .imagen-fondo-figura {
@@ -365,7 +366,8 @@ nav {
 @media (max-width: 575.98px) {
 	.imagen-principal,
 	.imagen-fondo {
-		height: 600px;
+		height: 660px;
+		width: 100%;
 	}
 
 	.imagen-descripcion {
@@ -580,9 +582,9 @@ select {
 	font-size: 1.3rem;
 	width: 100%;
 	padding: 1rem;
-	border: none;
+	border: 1px solid #e2ecf7;
 	box-shadow: -5px -3px 10px #ffffff, 5px 3px 10px rgba(0, 0, 0, 0.3), inset 0px 0px 0px rgba(255, 255, 255, 0), inset 0px 0px 0px rgba(0, 0, 0, 0);
-	background-color: #e2ecf7;
+	background-color: #ffffff;
 	color: #1b1b1b;
 	border-radius: 35px;
 	outline: 0;
