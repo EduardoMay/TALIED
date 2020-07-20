@@ -15,7 +15,7 @@
 		/>
 	</head>
 	<body>
-		<!--Menu-->
+		<!-- MENU -->
 		<nav>
 			<input type="checkbox" id="btn-menu" class="checkbox" />
 			<label for="btn-menu"><i class="fa fa-bars"></i></label>
@@ -53,7 +53,6 @@
 				</li>
 			</ul>
 		</nav>
-		<!--Aqui termina el menu-->
 
 		<!-- IMAGEN PRINCIPAL -->
 		<section class="imagen-principal">
@@ -88,56 +87,62 @@
 			</div>
 		</section>
 
-		<!-- termina imaagen-->
-		<seccion class="contenedor formulario-contenedor">
-			<h2 class="formulario-titulo">Fomulario de Contacto</h2>
+		<section class="contenedor bg-white contenedor-subtitulo texto-centro">
+			<div class="contacto-contenedor">
+				<section class="contacto-figura">
+					<img src="img/figura-1.svg" alt="" />
+					<h3>¿CÓMO PODEMOS AYUDARTE?</h3>
+					<p>Podemos encontrar cuál es tu mejor opción, descubrirás que imprimir en Cancún es más económico de lo que muchos de nuestros clientes piensan.</p>
+				</section>
+				<section class="contacto-formulario">
+					<form action="mailto:" method="POST ">
+						<div class="formulario-control">
+							<label>Nombres:</label>
+							<input maxlength="50" type="text" required size="50" placeholder="Nombres" />
+						</div>
 
-			<form action="mailto:" method="POST ">
-				<div class="formulario-control">
-					<label>Nombres:</label>
-					<input maxlength="50" type="text" required size="50" placeholder="Nombres" />
-				</div>
+						<div class="formulario-control">
+							<label>Apellidos:</label>
+							<input maxlength="50" type="text" required size="50" placeholder="Apellidos" />
+						</div>
 
-				<div class="formulario-control">
-					<label>Apellidos:</label>
-					<input maxlength="50" type="text" required size="50" placeholder="Apellidos" />
-				</div>
+						<div class="formulario-control">
+							<label>Email:</label>
+							<input maxlength="50" type="email" required size="50" placeholder="Coloca tu correo" />
+						</div>
 
-				<div class="formulario-control">
-					<label>Email:</label>
-					<input maxlength="50" type="email" required size="50" placeholder="Coloca tu correo" />
-				</div>
+						<div class="formulario-control">
+							<label>Teléfono:</label>
+							<input type="tel" size="10 " placeholder="Número de 10 dígitos " />
+						</div>
 
-				<div class="formulario-control">
-					<label>Teléfono:</label>
-					<input type="tel" size="10 " placeholder="Número de 10 dígitos " />
-				</div>
+						<div class="formulario-control">
+							<label>Servicios:</label>
+							<select name="Servicios " required>
+								<option value="Diseño Gráfico ">Diseño Gráfico</option>
+								<option value="Offset ">Offset</option>
+								<option value="Gran Formato ">Gran Formato</option>
+								<option value="Flexográfia ">Flexográfia</option>
+								<option value="Huecograbado ">Huecograbado</option>
+								<option value="Serigráfia ">Serigráfia</option>
+								<option value="Impresión ">Impresión</option>
+							</select>
+						</div>
 
-				<div class="formulario-control">
-					<label>Servicios:</label>
-					<select name="Servicios " required>
-						<option value="Diseño Gráfico ">Diseño Gráfico</option>
-						<option value="Offset ">Offset</option>
-						<option value="Gran Formato ">Gran Formato</option>
-						<option value="Flexográfia ">Flexográfia</option>
-						<option value="Huecograbado ">Huecograbado</option>
-						<option value="Serigráfia ">Serigráfia</option>
-						<option value="Impresión ">Impresión</option>
-					</select>
-				</div>
+						<div class="formulario-control">
+							<textarea name="observaciones" rows="10"> </textarea>
+						</div>
 
-				<div class="formulario-control">
-					<textarea name="observaciones" rows="10"> </textarea>
-				</div>
-
-				<div class="formulario-boton">
-					<button type="submit" class="boton">Enviar</button>
-				</div>
-				<!-- <button onclick="alert( 'Gracias por entrar a nuestra página web!') ">
-					Leer más ...
-				</button> -->
-			</form>
-		</seccion>
+						<div class="formulario-control">
+							<button type="submit" class="boton-1 w-100">Enviar</button>
+						</div>
+						<!-- <button onclick="alert( 'Gracias por entrar a nuestra página web!') ">
+							Leer más ...
+						</button> -->
+					</form>
+				</section>
+			</div>
+		</section>
 
 		<!--Comienza el Footer-->
 		<footer>
