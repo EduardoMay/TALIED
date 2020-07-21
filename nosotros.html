@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Astro Diseño e Impresión</title>
+		<title>Contacto</title>
 		<link rel="stylesheet" href="style/normalize.css" />
 		<link rel="stylesheet" href="style/style.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,10 +14,11 @@
 			crossorigin="anonymous"
 		/>
 	</head>
-
 	<body>
-		<!--Menu-->
+		<!-- MENU -->
 		<nav>
+			<input type="checkbox" id="btn-menu" class="checkbox" />
+			<label for="btn-menu"><i class="fa fa-bars"></i></label>
 			<div class="menu-logo">
 				<figure>
 					<img src="img/Logo.png" class="img-logo" width="200px" alt="Logo Astro" />
@@ -28,88 +29,165 @@
 				<li class="menu-item"><a href="nosotros.html">Nosotros</a></li>
 				<li class="menu-item"><a href="contacto.html">Contacto</a></li>
 				<li class="menu-item submenu">
-					<a href="servicios.html">Servicios</a>
+					<span>Servicios</span>
 					<ul class="submenu-contenedor">
 						<li class="submenu-item">
-							<a href="Diseño Gráfico.html">Diseño Gráfico</a>
+							<a href="Diseño Gráfico.html">Copias</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Offset.html">Offset</a>
+							<a href="Offset.html">Engargolado</a>
 						</li>
 						<li class="submenu-item">
 							<a href="Gran Formato.html">Gran Formato</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Flexográfia.html">Flexográfia</a>
+							<a href="Flexográfia.html">Impresion</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Huecograbado.html">Huecograbado</a>
+							<a href="Huecograbado.html">Promocional</a>
 						</li>
 						<li class="submenu-item">
-							<a href="Serigráfia.html">Serigráfia</a>
+							<a href="Serigráfia.html">Promociones</a>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
-		<!--Aqui termina el menu-->
 
-		<!--Seccion de Astro Diseño e Impresion-->
-		<!--Imagen-->
-		<div class="imagen-principal">
-			<img src="img/ImagenPrincipal.jpg" alt="imagen principal" />
+		<!-- IMAGEN PRINCIPAL -->
+		<section class="imagen-principal">
+			<div class="imagen-fondo">
+				<img src="img/main-2.svg" alt="" />
+			</div>
+			<div class="imagen-fondo-figura">
+				<img class="nosotros" src="img/figura-2.svg" alt="" />
+			</div>
 			<div class="imagen-descripcion">
-				<h1>Tiltulo de la imagen</h1>
+				<h1>NOSOTROS</h1>
+				<p>Nos encantara resolver cualquiera de tus dudas acerca de nuestros servicios y productos.</p>
 			</div>
-		</div>
-		<!-- termina imaagen-->
+		</section>
 
-		<div class="info-contenedor">
-			<div class="info-main">
-				<h3>Contáctanos</h3>
-				<p>astro@diseño.com</p>
-				<a href="#">Más Información</a>
+		<section class="contenedor bg-white contenedor-subtitulo texto-centro">
+			<h3>QUIENES SOMOS</h3>
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ratione nemo est debitis ex nulla corrupti modi nihil, officia quam itaque, excepturi ullam libero quos sunt,
+				veniam consequuntur laborum eos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ratione nemo est debitis ex nulla corrupti modi nihil, officia quam itaque,
+				excepturi ullam libero quos sunt, veniam consequuntur laborum eos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ratione nemo est debitis ex nulla corrupti modi
+				nihil, officia quam itaque, excepturi ullam libero quos sunt, veniam consequuntur laborum eos!
+			</p>
+		</section>
+
+		<section class="contenedor info-contenedor">
+			<div class="card-2-contenedor">
+				<h4>Mision</h4>
+				<div class="line-2"></div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam reiciendis consectetur aliquam iure eum odit modi repudiandae, minima doloremque quibusdam labore. Eveniet voluptas
+				</p>
 			</div>
-		</div>
+			<div class="card-2-contenedor">
+				<h4>Vision</h4>
+				<div class="line-2"></div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam reiciendis consectetur aliquam iure eum odit modi repudiandae, minima doloremque quibusdam labore. Eveniet voluptas
+				</p>
+			</div>
+		</section>
+		<section class="contenedor info-contenedor">
+			<div class="card-2-contenedor">
+				<h4>Objetivos</h4>
+				<div class="line-2"></div>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, itaque.</p>
+				<ul>
+					<li>opcion 1</li>
+					<li>opcion 2</li>
+					<li>opcion 3</li>
+					<li>opcion 4</li>
+				</ul>
+			</div>
+		</section>
 
-		<section class="footer">
-			<div class="footer-contenedor">
-				<div class="footer-main">
-					<div class="footer-columna">
-						<h3>Suscríbete</h3>
-						<input type="email" placeholder="Escribe tu Correo" />
+		<section class="equipo-titulo-contenedor">
+			<div class="equipo-titulo-img">
+				<img src="img/figura-3.svg" alt="" />
+			</div>
+			<div class="equipo-titulo-img">
+				<img src="img/figure-4.svg" alt="" />
+			</div>
+			<div class="equipo-titulo">
+				<h2>EQUIPO DE TRABAJO</h2>
+			</div>
+		</section>
 
-						<input type="submit" value="Suscríbete" />
-					</div>
-					<div class="footer-columna">
-						<h3>Dirección</h3>
-						<span class="mapa-calle"><p>250 Av.Lopez Portillo - Cáncun</p></span>
-
-						<span class="telefono"><p>(+52) 99-81-25-04-68</p></span>
-
-						<span class="correo"><p>astro@diseño.com</p></span>
-					</div>
+		<section class="equipo-contenedor">
+			<div class="card-3-contenedor">
+				<div class="card-3-header">
+					<img src="img/avatar-1.svg" alt="" />
+				</div>
+				<div class="card-3-body">
+					<h3>Liliana</h3>
+					<p>La Jefa</p>
 				</div>
 			</div>
-
-			<div class="footer-copy-redes">
-				<div class="main-copy-redes">
-					<div class="footer-copy">
-						&copy;Todos los derechos reservados - | Astro Diseño e Impresiones &copy; |.
-					</div>
-
-					<div class="footer-redes">
-						<a
-							href="https://www.facebook.com/?stype=lo&jlou=Afd-9pMb5VpqFZ6JCK8UEHwirqi4X9_C_QHftG4I91pCVAwJkbFe9m0ZgkL7btHNrmtxooF2bUv48iKjQK1Gi7j97Qd9aZQrfHeNSa4g_j91PA&smuh=56879&lh=Ac_aWX2M6UdZZShi"
-							target="_blank"
-							class="Facebook"
-							><i class="fa fa-facebook"></i
-						></a>
-						<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="Instagram"><i class="fa fa-instagram"></i></a>
-						<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido'" target="_blank" class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
-					</div>
+			<div class="card-3-contenedor">
+				<div class="card-3-header">
+					<img src="img/avatar-2.svg" alt="" />
+				</div>
+				<div class="card-3-body">
+					<h3>Tamara</h3>
+					<p>La Ayudante de la Jefa</p>
+				</div>
+			</div>
+			<div class="card-3-contenedor">
+				<div class="card-3-header">
+					<img src="img/avatar-3.svg" alt="" />
+				</div>
+				<div class="card-3-body">
+					<h3>Eduardo</h3>
+					<p>El Que Hace Todo</p>
 				</div>
 			</div>
 		</section>
+
+		<!--Comienza el Footer-->
+		<footer>
+			<section class="contenedor contacto-subscribete-contenedor">
+				<div>
+					<h4>CONTACTO</h4>
+					<div>
+						<p>Email:</p>
+						<p>el_creador_lalo@outlook.com</p>
+					</div>
+					<div class="mt-3">
+						<p>Direccion:</p>
+						<p>Mexico, Cancun, Quintana Roo</p>
+						<p>Region 100 Mz 87 Lt 1</p>
+						<p>C. P. 77510</p>
+					</div>
+				</div>
+				<div>
+					<h4>Subscribete</h4>
+					<form class="texto-derecha">
+						<input type="text" placeholder="Correo" />
+						<input type="submit" value="Enviar" />
+					</form>
+				</div>
+			</section>
+			<section class="contenedor contenedor-social">
+				<div class="contenedor-social-item">
+					<a href="https://www.facebook.com" target="_blank" class="Facebook"><i class="fa fa-facebook"></i></a>
+				</div>
+				<div class="contenedor-social-item">
+					<a href="https://www.instagram.com/?hl=es-la" target="_blank" class="Instagram"><i class="fa fa-instagram"></i></a>
+				</div>
+				<div class="contenedor-social-item">
+					<a href="https://api.whatsapp.com/send?phone=529981252209&text='Bienvenido'" target="_blank" class="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+				</div>
+			</section>
+			<section class="texto-centro contenedor-derechos">
+				2020 Astro. Todos los Derechos Reservados
+			</section>
+		</footer>
 	</body>
 </html>
