@@ -539,9 +539,10 @@ footer {
 }
 
 .contacto-subscribete-contenedor {
-	display: flex;
-	justify-content: space-between;
-	padding: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2rem;
+	padding: 4rem 0;
 }
 
 .contacto-subscribete-contenedor h4 {
@@ -556,6 +557,10 @@ footer {
 
 .contacto-subscribete-contenedor p:nth-child(1) {
 	font-weight: bold;
+}
+
+.contacto-subscribete-contenedor form {
+	margin-top: 1rem;
 }
 
 .contenedor-social {
@@ -582,7 +587,7 @@ footer {
 
 @media (max-width: 575.98px) {
 	.contacto-subscribete-contenedor {
-		flex-direction: column;
+		grid-template-columns: 1fr;
 	}
 
 	.contacto-subscribete-contenedor > div:nth-child(2) {
