@@ -223,7 +223,8 @@ nav {
 	position: relative;
 	color: #f02c53;
 	text-decoration: none;
-	font-weight: 500;
+	font-weight: 600;
+	letter-spacing: 2px;
 	padding: 0.7rem 1.5rem;
 	outline: none;
 	cursor: pointer;
@@ -411,6 +412,10 @@ nav {
 
 	.imagen-fondo-figura .contacto {
 		width: 100%;
+	}
+
+	.imagen-fondo-figura .nosotros {
+		width: 90%;
 	}
 }
 
@@ -765,4 +770,46 @@ select:focus {
 .card-3-body p {
 	color: #ffffff;
 	font-style: italic;
+}
+
+@media (max-width: 575.98px) {
+	.info-contenedor {
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.card-2-contenedor {
+		width: 100%;
+		margin: 3rem 0;
+	}
+
+	.equipo-titulo-contenedor {
+		height: auto;
+		padding: 2rem 0;
+	}
+
+	.equipo-titulo-img:nth-child(1) {
+		display: none;
+	}
+
+	.equipo-titulo-img:nth-child(2),
+	.equipo-titulo {
+		position: initial;
+	}
+
+	.equipo-titulo-img img {
+		width: 100%;
+		object-fit: initial;
+	}
+
+	.equipo-contenedor {
+		flex-direction: column;
+		margin-top: 10rem;
+		margin-bottom: 5rem;
+	}
+
+	.card-3-contenedor {
+		width: 80%;
+		margin: 80px auto;
+	}
 }
