@@ -82,27 +82,31 @@ a {
 h1 {
 	font-size: 4rem;
 	font-weight: bold;
-	font-family: 'Rowdies', cursive;
 }
 h2 {
 	font-size: 3.5rem;
-	font-family: 'Rowdies', cursive;
 }
 h3 {
 	font-size: 3rem;
-	font-family: 'Rowdies', cursive;
 }
 h4 {
 	font-size: 2.5rem;
-	font-family: 'Rowdies', cursive;
 }
 h5 {
 	font-size: 2rem;
-	font-family: 'Rowdies', cursive;
 }
 h6 {
 	font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Rowdies', cursive;
+	letter-spacing: 1px;
 }
 
 @media (max-width: 575.98px) {
@@ -146,13 +150,13 @@ h6 {
 .boton-1,
 input[type='submit'] {
 	display: inline-block;
-	margin: 2rem 0;
+	margin-top: 1rem;
 	border-radius: 35px;
 	text-decoration: none;
 	font-size: 1.3rem;
 	border: none;
 	outline: none;
-	padding: 1rem 2rem;
+	padding: 1.5rem 2rem;
 	background-color: #ed492f;
 	color: #ffffff;
 	box-shadow: -6px -6px 20px #ffffff, 6px 6px 20px rgba(0, 0, 0, 0.3), inset 0px 0px 0px rgba(255, 255, 255, 0.5), inset 0px 0px 0px rgba(0, 0, 0, 0.15);
@@ -593,13 +597,13 @@ footer {
 }
 
 .contacto-figura {
+	padding: 0 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .contacto-formulario {
-	padding: 1rem;
 	text-align: center;
 	width: 100%;
 	margin: 3rem auto;
@@ -615,6 +619,7 @@ footer {
 .formulario-control label {
 	display: inline-block;
 	margin-bottom: 1rem;
+	font-size: 1.5rem;
 }
 
 input[type='text'],
@@ -662,10 +667,41 @@ select:focus {
 	box-shadow: 0px 0px 0px #ffffff, 0px 0px 0px rgba(0, 0, 0, 0.3), inset -4px -4px 10px rgba(255, 255, 255, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+.contacto-info-contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3rem;
+}
+
+.contacto-info-item {
+	width: 50%;
+	margin: 0 auto;
+	padding: 2rem;
+	border-radius: 17px;
+	background-color: #dd2c85;
+	box-shadow: -8px -8px 20px #ffffff, 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contacto-info-item p {
+	color: #ffffff;
+}
+.contacto-info-item p:nth-child(1) {
+	font-size: 1.7rem;
+}
+
 @media (max-width: 575.98px) {
 	.contacto-contenedor {
 		display: grid;
 		grid-template-columns: 1fr;
+	}
+
+	.contacto-info-contenedor {
+		grid-template-columns: 1fr;
+		grid-gap: 3rem;
+	}
+
+	.contacto-info-item {
+		width: 100%;
 	}
 }
 
