@@ -31,6 +31,10 @@ body {
 	background-color: #ffffff;
 }
 
+.color-blanco {
+	color: #ffffff;
+}
+
 img {
 	width: 100%;
 	object-fit: cover;
@@ -348,10 +352,22 @@ nav {
 }
 
 .imagen-fondo {
-	width: 66%;
+	width: 100%;
 	height: 700px;
 	text-align: right;
 	margin-left: auto;
+}
+
+.imagen-fondo.servicio {
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0.5;
+	background: linear-gradient(90deg, #6e1643 0%, #dd2c85 100%);
+}
+
+.imagen-fondo img {
+	height: 100%;
 }
 
 .imagen-fondo-figura {
@@ -430,6 +446,14 @@ nav {
 	.imagen-fondo-figura .nosotros {
 		width: 90%;
 	}
+
+	.imagen-fondo-figura.servicio img {
+		height: 100%;
+	}
+
+	.imagen-descripcion.servicio {
+		text-align: center;
+	}
 }
 
 /*-------------------- CONTENEDOR SUBTITULO --------------------*/
@@ -443,21 +467,32 @@ nav {
 
 /*-------------------- IMAGEN SECUNDARIO --------------------*/
 
-.producto {
+.imagen-secundario.producto {
 	background: url('../img/imagen-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-.servicio {
+.imagen-secundario.inicio-servicio {
 	background: url('../img/servicios-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.imagen-secundario.servicio {
+	background: url('../img/imagen-3.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-align: center;
 }
 
 .imagen-secundario {
 	width: 100%;
 	height: 300px;
 	position: relative;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 .imagen-secundario-descripcion {
@@ -471,8 +506,16 @@ nav {
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
+.gran-formato .imagen-secundario-descripcion {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
 .producto .imagen-secundario-descripcion {
 	border-bottom: 20px solid #2f74ed;
+}
+
+.inicio-servicio .imagen-secundario-descripcion {
+	border-bottom: 20px solid #ffbb44;
 }
 
 .servicio .imagen-secundario-descripcion {
@@ -484,12 +527,28 @@ nav {
 	font-size: 3rem;
 }
 
+.imagen-secundario-descripcion p {
+	color: #ffffff;
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+@media (max-width: 575.98px) {
+	.imagen-secundario.servicio {
+		height: 500px;
+	}
+
+	.imagen-secundario.servicio .imagen-secundario-descripcion {
+		height: 500px;
+	}
+}
+
 /*-------------------- PRODUCTOS Y SERVICIOS - TARJETAS --------------------*/
 
 .card-contenedor {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 2rem;
+	grid-gap: 4rem;
 	margin: 5rem auto;
 }
 
@@ -520,6 +579,11 @@ nav {
 
 .card-img img {
 	height: 100%;
+	transition: 0.3s all;
+}
+
+.card-contenedor article:hover .card-img img {
+	transform: scale(1.1);
 }
 
 .card-descripcion {
