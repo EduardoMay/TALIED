@@ -286,6 +286,15 @@ nav {
 	border-radius: 0;
 }
 
+.progress-bar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 4px;
+	width: 0%;
+	background: linear-gradient(90deg, #6e1643 0%, #dd2c85 100%);
+}
+
 @media (max-width: 575.98px) {
 	nav label {
 		display: block;
