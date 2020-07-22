@@ -489,6 +489,13 @@ nav {
 	background-attachment: fixed;
 }
 
+.imagen-secundario.inicio-testimoniales {
+	background: url('../img/imagen-26.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 .imagen-secundario.servicio {
 	background: url('../img/imagen-3.jpg');
 	background-size: cover;
@@ -524,6 +531,10 @@ nav {
 
 .inicio-servicio .imagen-secundario-descripcion {
 	border-bottom: 20px solid #ffbb44;
+}
+
+.inicio-testimoniales .imagen-secundario-descripcion {
+	border-bottom: 20px solid #dd2c85;
 }
 
 .servicio .imagen-secundario-descripcion {
@@ -610,6 +621,73 @@ nav {
 	.card-img {
 		width: 180px;
 		height: 180px;
+	}
+}
+
+/*-------------------- TESTIMONIALES --------------------*/
+
+.card-4-contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 4rem;
+	margin: 5rem auto;
+}
+
+.card-4-item {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: 1rem;
+	padding: 2rem;
+	border-radius: 17px;
+	box-shadow: -8px -8px 20px #ffffff, 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-4-item:nth-child(1) {
+	background-color: #2f74ed;
+}
+.card-4-item:nth-child(2) {
+	background-color: #ffbb44;
+}
+.card-4-item:nth-child(3) {
+	background-color: #dd2c85;
+}
+
+.card-4-descripcion p {
+	color: #ffffff;
+}
+
+.card-4-descripcion b {
+	font-size: 1.5rem;
+}
+
+.card-4-descripcion .comilla {
+	color: #ffffff;
+	font-size: 10rem;
+	margin: 0;
+}
+
+.card-4-img {
+	align-self: center;
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #e2ecf7;
+}
+
+.card-4-img img {
+	height: 100%;
+}
+
+@media (max-width: 575.98px) {
+	.card-4-contenedor {
+		grid-template-columns: 1fr;
+	}
+
+	.card-4-img {
+		align-self: start;
+		width: 100px;
+		height: 100px;
 	}
 }
 
