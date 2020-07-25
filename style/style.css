@@ -370,73 +370,95 @@ nav {
 
 .imagen-principal {
 	height: 700px;
+	margin-top: 5rem;
 	position: relative;
-	margin-top: 4rem;
 	overflow: hidden;
-	background-color: #ffffff;
+	display: block;
 }
 
-.imagen-fondo {
+.imagen-principal.bg-1::before {
+	content: '';
 	width: 100%;
-	height: 700px;
-	text-align: right;
-	margin-left: auto;
-}
-
-.imagen-fondo.servicio {
-	position: absolute;
-	top: 0;
-	right: 0;
-	opacity: 0.5;
-	background: linear-gradient(90deg, #6e1643 0%, #dd2c85 100%);
-}
-
-.imagen-fondo img {
-	height: 100%;
-}
-
-.imagen-fondo-figura {
+	height: 235%;
 	position: absolute;
 	bottom: 0;
-	right: 0;
+	z-index: -1;
+	background: url('../img/main-1.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.imagen-principal.bg-2::before {
+	content: '';
 	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
+	height: 235%;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	background: url('../img/main-2.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.imagen-fondo-figura .index {
-	width: 50%;
+.imagen-principal.bg-3::before {
+	content: '';
+	width: 100%;
+	height: 235%;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	background: url('../img/main-3.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.imagen-fondo-figura .contacto {
-	width: 60%;
+.imagen-principal.bg-4 {
+	width: 100%;
+	height: 235%;
+	background: linear-gradient(90deg, rgba(250, 115, 30, 1) 0%, rgba(234, 35, 144, 1) 33%, rgba(234, 35, 144, 1) 65%, rgba(250, 115, 30, 1) 100%);
+	background-size: 500% 100%;
+	transition: 0.8s all;
 }
 
-.imagen-fondo-figura .nosotros {
-	width: 40%;
-	margin-right: 2rem;
+.imagen-principal.bg-5 {
+	width: 100%;
+	height: 235%;
+	background: linear-gradient(90deg, rgba(47, 116, 237, 1) 0%, rgba(234, 35, 144, 1) 33%, rgba(234, 35, 144, 1) 65%, rgba(47, 116, 237, 1) 100%);
+	background-size: 500% 100%;
+	transition: 0.8s all;
+}
+
+.imagen-principal.bg-4:hover,
+.imagen-principal.bg-5:hover {
+	background-position: 100% 0%;
+}
+
+.imagen-info {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5rem;
+	padding: 5rem 0;
 }
 
 .imagen-descripcion {
-	width: 50%;
-	height: 100%;
-	padding: 0 0.5rem;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	transition: 0.3s;
+	color: #ffffff;
+	text-align: center;
+	align-self: center;
 }
 
 .imagen-descripcion p {
 	font-size: 1.5rem;
-	text-align: center;
-	margin-bottom: 1rem;
+	color: #ffffff;
+}
+
+.imagen-figura {
+	align-self: center;
+}
+
+.imagen-figura,
+.imagen-figura img {
+	height: 500px;
+	object-fit: initial;
 }
 
 .buscador-contenedor {
@@ -445,39 +467,9 @@ nav {
 }
 
 @media (max-width: 575.98px) {
-	.imagen-principal,
-	.imagen-fondo {
-		height: 660px;
-		width: 100%;
-	}
-
-	.imagen-descripcion {
-		width: 100%;
-		padding: 0 1rem;
-	}
-
-	.buscador-contenedor input[type='text'] {
-		width: 80%;
-	}
-
-	.imagen-fondo-figura .index {
-		width: 80%;
-	}
-
-	.imagen-fondo-figura .contacto {
-		width: 100%;
-	}
-
-	.imagen-fondo-figura .nosotros {
-		width: 90%;
-	}
-
-	.imagen-fondo-figura.servicio img {
-		height: 100%;
-	}
-
-	.imagen-descripcion.servicio {
-		text-align: center;
+	.imagen-info {
+		grid-template-columns: 1fr;
+		grid-gap: 1rem;
 	}
 }
 
@@ -523,7 +515,7 @@ nav {
 
 .imagen-secundario {
 	width: 100%;
-	height: 300px;
+	height: 500px;
 	position: relative;
 }
 
@@ -531,7 +523,7 @@ nav {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 300px;
+	height: 500px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
