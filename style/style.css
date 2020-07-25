@@ -1067,6 +1067,7 @@ select:focus {
 .blog-imagen-principal {
 	height: 500px;
 	width: 100%;
+	border-top: 10px solid #ffbb44;
 	border-bottom: 10px solid #ffbb44;
 	margin-bottom: 1rem;
 	border-radius: 17px;
