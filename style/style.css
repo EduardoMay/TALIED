@@ -1008,12 +1008,19 @@ select:focus {
 
 /*-------------------- BLOG --------------------*/
 
+.blog-boton,
+.blog-boton i,
+.blog-imagen img {
+	transition: 0.3s all;
+}
+
 .blog-contenedor {
 	height: 100%;
 	margin-top: 5rem;
 	margin-bottom: 5rem;
-	columns: 3;
-	column-gap: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1rem;
 }
 
 .blog-item {
@@ -1042,10 +1049,15 @@ select:focus {
 
 .blog-imagen {
 	height: 350px;
+	overflow: hidden;
 }
 
 .blog-imagen img {
 	height: 100%;
+}
+
+.blog-item:hover .blog-imagen img {
+	transform: scale(1.1);
 }
 
 .blog-descripcion {
@@ -1077,11 +1089,6 @@ select:focus {
 	font-weight: bold;
 }
 
-.blog-boton,
-.blog-boton i {
-	transition: 0.3s all;
-}
-
 .blog-boton:hover i {
 	padding-left: 0.6rem;
 }
@@ -1092,7 +1099,11 @@ select:focus {
 
 @media (max-width: 575.98px) {
 	.blog-contenedor {
-		columns: 1;
+		grid-template-columns: 1fr;
+	}
+
+	.blog-imagen {
+		height: 250px;
 	}
 }
 
