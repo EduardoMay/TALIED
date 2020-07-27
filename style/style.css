@@ -1012,7 +1012,7 @@ select:focus {
 	height: 100%;
 	margin-top: 5rem;
 	margin-bottom: 5rem;
-	columns: 4;
+	columns: 3;
 	column-gap: 2rem;
 }
 
@@ -1041,7 +1041,7 @@ select:focus {
 }
 
 .blog-imagen {
-	height: 500px;
+	height: 350px;
 }
 
 .blog-imagen img {
@@ -1052,8 +1052,42 @@ select:focus {
 	padding: 2rem;
 }
 
+.blog-tags {
+	margin-right: 0.5rem;
+	padding: 0.4rem 1.2rem;
+	background: #ffbb44;
+	border-radius: 35px;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
 .blog-descripcion h4 {
 	color: #dd1177;
+	margin: 1.3rem 0;
+}
+
+.blog-fecha {
+	font-size: 1rem;
+}
+
+.blog-boton {
+	color: #000000;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.blog-boton,
+.blog-boton i {
+	transition: 0.3s all;
+}
+
+.blog-boton:hover i {
+	padding-left: 0.6rem;
+}
+
+.blog-boton:hover {
+	color: #2f74ed;
 }
 
 @media (max-width: 575.98px) {
