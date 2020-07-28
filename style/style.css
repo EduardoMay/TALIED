@@ -378,7 +378,7 @@ nav {
 
 .imagen-principal {
 	height: 700px;
-	margin-top: 5rem;
+	margin-top: 50px;
 	position: relative;
 	overflow: hidden;
 	display: block;
@@ -535,6 +535,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -633,6 +634,13 @@ nav {
 	}
 	100% {
 		margin-left: -300%;
+	}
+}
+
+@media (max-width: 575.98px) {
+	.slider-imagenes {
+		width: 90%;
+		height: auto;
 	}
 }
 
@@ -758,10 +766,19 @@ nav {
 		grid-template-columns: 1fr;
 	}
 
+	.card-4-item {
+		grid-template-columns: 1fr;
+	}
+
+	.card-4-descripcion {
+		text-align: center;
+	}
+
 	.card-4-img {
-		align-self: start;
-		width: 100px;
-		height: 100px;
+		grid-row-start: 1;
+		justify-self: center;
+		width: 150px;
+		height: 150px;
 	}
 }
 
