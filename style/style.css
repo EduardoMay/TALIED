@@ -1098,16 +1098,17 @@ select:focus {
 	margin: 0;
 	margin-right: 0.5rem;
 	margin-bottom: 0.5rem;
-	padding: 0.2rem 1.2rem;
-	background: #ffbb44;
+	padding: 0.2rem 0.7rem;
+	background: #2f74ed;
 	border-radius: 35px;
 	color: #ffffff;
-	font-size: 1rem;
+	font-size: 0.7rem;
 }
 
 .blog-descripcion h4 {
 	color: #dd1177;
-	margin: 1.3rem 0;
+	margin: 0;
+	margin-top: 0.4rem;
 }
 
 .blog-fecha {
