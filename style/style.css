@@ -1187,6 +1187,12 @@ select:focus {
 	margin: 0;
 }
 
+.publicaciones-recientes-descripcion span {
+	display: inline-block;
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
 .publicaciones-recientes-tags h6 {
 	margin-bottom: 1rem;
 }
