@@ -899,7 +899,7 @@ input[type='email']:not(:placeholder-shown):invalid {
 }
 
 .card-2-contenedor {
-	width: 30%;
+	width: 40%;
 	padding: 4rem;
 	background-color: #2f74ed;
 	color: #ffffff;
@@ -913,8 +913,9 @@ input[type='email']:not(:placeholder-shown):invalid {
 }
 
 .card-2-contenedor li {
-	list-style: none;
-	font-size: 1.5rem;
+	list-style: decimal;
+	font-size: 1rem;
+	color: #ffffff;
 }
 
 .equipo-titulo-contenedor {
