@@ -737,6 +737,10 @@ nav {
 	background-color: #dd2c85;
 }
 
+.card-4-descripcion img {
+	width: 70px;
+}
+
 .card-4-descripcion p {
 	color: #ffffff;
 }
